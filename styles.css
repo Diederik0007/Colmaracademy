@@ -16,19 +16,7 @@ video{
     object-fit: cover;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    font-size: 1rem;
-    padding: 0 1rem;
-}
-
- ul li {
-    padding-left: 1rem;
-
-}
-
- a {
+a {
     text-decoration: none;
     color: gray;
 }
@@ -77,20 +65,45 @@ background-color: lightgray;
     align-items: center;
 }
 
+.header ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.header ul li {
+    padding-left: 1rem;
+
+}
 .header-mobile {
     display: none;
 }
 
-@media only screen and (max-width: 480px) { 
-    /* Styles for mobile devices */ 
-    .header-left,
-    .header-right {
-        display:none;
-        } 
-    .header-mobile {
-        display: block;
-        }
+@media only screen and (max-width: 760px) {
+    .header {
+      display: none;
     }
+  
+    .header-mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    .header-mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+          list-style-type: none;
+    }
+  
+    .header-mobile li {
+      padding: 0;
+    }
+  }
+  
 
 .news {
     background-color: lightgray;
@@ -124,12 +137,32 @@ background-color: lightgray;
 }
 
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 760px) { 
     /* Styles for mobile devices */ 
     .news {
         display: grid;
         grid-template-columns: 1fr;
         }
+    .news-left {
+        width: 100%;
+        margin: 0;
+    }
+    .news-right {
+        width: 100%;
+        /* padding: 2rem 1rem; */
+    }
+    .news-right button {
+        width: 100%;
+    }
+    .news-right-center {
+        padding: 2rem 1rem;
+    }
+    .marginbottom20rem {
+        margin-bottom: 2rem;
+    }
+    .marginbottom15rem {
+        margin-bottom: 1.5rem;
+    }
     }
 
 
@@ -172,8 +205,12 @@ background-color: lightgray;
     color:blue;
 }
 
+.offer-2 .mobile {
+    display: none;
+}
 
-@media only screen and (max-width: 480px) { 
+
+@media only screen and (max-width: 760px) { 
     /* Styles for mobile devices */ 
     .offering-left {
         display: none;
@@ -181,17 +218,49 @@ background-color: lightgray;
     .offering-right {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
         }   
     .offer-2 {
         display: grid;
         grid-template-columns: 1fr;
-        }   
+        margin: 1rem;
+        } 
+    .offer-2 .mobile {
+        display: flex;
+
+    }  
+
+    .offer-2-picture {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        border: blue 1px solid;
+    }
+ 
+    .offer-2-text {
+        padding: 1rem 1rem;
+        background-color: white;
+    }
+
+    .offer-2 .desktop {
+        display: none;
+    }
     }
 
 
 .startlearning {
     padding: 2rem;
     background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 760px) { 
+    /* Styles for mobile devices */ 
+    .startlearning {
+        background-color: white;
+    }
 }
 
 .coursecontainer {
@@ -220,19 +289,35 @@ background-color: lightgray;
     display: none;
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 760px) { 
     /* Styles for mobile devices */ 
     .courses {
-        display:none;
-        } 
+        display: none;
+    }
+
+    .coursecontainer {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        }
+
+
     .courses-mobile {
-        display: block;
+        display: grid;
+        justify-content: center;
+        }
+
+    .courses-mobile button {
+        margin: 0.5rem 1rem; 
         }
     }
 
 
 .thesisexh {
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .thesis-left {
@@ -270,15 +355,13 @@ background-color: lightgray;
     margin: 2rem 0 0 0;
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 760px) { 
     /* Styles for mobile devices */ 
     .thesis-right,
     .video-text {
         display:none;
         } 
-    .courses-mobile {
-        display: block;
-        }
+
     }
 
 
