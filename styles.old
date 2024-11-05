@@ -1,0 +1,161 @@
+html {
+    font-size: 16px;
+}
+
+p {
+    color: gray;
+}
+
+.container {
+    display: grid;
+}
+
+.item {
+
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+/* navigatie */
+
+.navigatie {
+    font-size: 2rem;
+    position: fixed;
+    background-color: white;
+    z-index:1000;
+    width: 100%;
+    height: 4rem; 
+    top: 0;
+    padding-right: 1.5rem;
+ }
+
+ .left-item {
+    display: flex;
+}
+
+.right-item {
+    margin-left: auto;
+    padding: 1.5rem;
+}
+
+ ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+ ul li {
+    padding-left: 1rem;
+
+}
+
+ a {
+    text-decoration: none;
+    color: gray;
+}
+
+ .gray {
+    color: gray;
+ }
+
+
+
+
+/* banner */
+.banner {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.banner .learn {
+    padding: 2rem 0;
+ }
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner.start {
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+}
+
+/* information */
+.information {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.information .practice {
+    padding: 2rem 0;
+ }
+
+.information img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.information .orientation {
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+
+
+
+
+
+
+/* courses */
+.courses {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* thesis */
+.thesis {
+    /* margin-top: 4rem; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.thesis .thesisvideo {
+    padding: 2rem 0;
+ }
+
+.thesis img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thesis .thesiscontent {
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.thesis video{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+
+/* footer */
+
+

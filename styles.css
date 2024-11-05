@@ -1,0 +1,297 @@
+html {
+    font-size: 16px;
+}
+
+img {
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+ ul li {
+    padding-left: 1rem;
+
+}
+
+ a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container {
+    display: grid;
+    border: red 1px solid;
+}
+
+.item {
+    border: blue 1px solid;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.header {
+    padding: 0rem 1.5rem;
+    height: 4rem;
+}
+
+p {
+    color: grey;
+}
+
+.grey {
+    color:grey;
+}
+
+.gray {
+background-color: lightgray;
+}
+
+.header-left {
+    border: pink 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right {
+    border: orange 1px solid;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) { 
+    /* Styles for mobile devices */ 
+    .header-left,
+    .header-right {
+        display:none;
+        } 
+    .header-mobile {
+        display: block;
+        }
+    }
+
+.news {
+    background-color: lightgray;
+    color: black;
+}
+
+.news-left {
+    border: pink 1px solid;
+    margin: 2rem 1.5rem;
+    width: 60vw;
+    box-sizing: border-box;
+}
+
+.news-right {
+    border: orange 1px solid;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-right-center {
+    padding: 0 4rem;
+}
+
+.news-right button {
+    padding: 0.5rem;
+    color: white;
+    background-color: gray;
+    border-color:gray;
+}
+
+
+@media only screen and (max-width: 480px) { 
+    /* Styles for mobile devices */ 
+    .news {
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+    }
+
+
+.offering {
+    height: auto;
+}
+
+.offering-left {
+    border: pink 1px solid;
+    margin: 2rem 1.5rem;
+    width: 60vw;
+    box-sizing: border-box;
+}
+
+.offering-right {
+    border: orange 1px solid;
+    width: 40%; 
+    margin-top: 1rem;
+}
+
+.offer-2 {
+    border: 1px solid yellow;
+    display: flex;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.offer-2-picture {
+    margin: 1rem 1rem;
+    width: 35%;
+    height: auto;
+    border: blue 1px solid;
+}
+
+.offer-2-text {
+    align-items: center;
+}
+
+.offer-2-text a {
+    color:blue;
+}
+
+
+@media only screen and (max-width: 480px) { 
+    /* Styles for mobile devices */ 
+    .offering-left {
+        display: none;
+        }
+    .offering-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        }   
+    .offer-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        }   
+    }
+
+
+.startlearning {
+    padding: 2rem;
+    background-color: lightgray;
+}
+
+.coursecontainer {
+    margin: 0 4rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    background-color: lightgray;
+}
+
+.courses {
+    border: 1px green solid;
+    background-color: white;
+}
+
+.courses-picture {
+    border: red 1px solid;
+}
+
+.courses-text {
+    border: 1px solid yellow; 
+    padding: 1rem 0 1.5rem 1rem;
+}
+
+.courses-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) { 
+    /* Styles for mobile devices */ 
+    .courses {
+        display:none;
+        } 
+    .courses-mobile {
+        display: block;
+        }
+    }
+
+
+.thesisexh {
+    padding: 2rem;
+}
+
+.thesis-left {
+    border: pink 1px solid;
+    width: 60vw;
+    box-sizing: border-box;
+    margin: 0 2rem;
+}
+
+.thesis-right {
+    border: orange 1px solid;
+    width: 40%;
+}
+
+.thesis-2-picture {
+    margin: 1rem 1rem;
+    width: 35%;
+    height: auto;
+    box-sizing: border-box;
+    border: blue 1px solid;
+}
+
+.thesis-2 {
+    border: 1px solid yellow;
+    display: flex;
+    grid-template-columns: 35% 65%;
+}
+
+.video {
+    border: orange 1px solid;
+}
+
+.video-text {
+    border: pink 1px solid;
+    margin: 2rem 0 0 0;
+}
+
+@media only screen and (max-width: 480px) { 
+    /* Styles for mobile devices */ 
+    .thesis-right,
+    .video-text {
+        display:none;
+        } 
+    .courses-mobile {
+        display: block;
+        }
+    }
+
+
+
+.footer {
+    padding: 1rem 1.5rem;
+}
+
+.footer-left {
+    border: pink 1px solid;
+}
+
+.footer-right {
+    border: orange 1px solid;
+    margin-left: auto;
+}
