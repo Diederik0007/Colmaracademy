@@ -299,20 +299,28 @@ background-color: lightgray;
         margin: 0;
         display: grid;
         grid-template-columns: 1fr;
-        background-color: white;
-        }
+        column-width: 100%;
 
+        }
 
     .courses-mobile {
-        display: grid;
-        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        color: black;
+        background-color: white;
+        row-gap: 0.5rem;
+    
         }
-
-    .courses-mobile button {
-        margin: 0.5rem 1rem; 
+    .courses-link-mobile {
+        background-color: lightgrey;
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: 0 1rem;
         }
+    .courses-link-mobile a {
+        color:black;
     }
 
+}
 
 .thesisexh {
     padding: 2rem;
@@ -361,7 +369,10 @@ background-color: lightgray;
     .video-text {
         display:none;
         } 
-
+    .thesis-left {
+        width: 100%;
+        margin: 0;
+    }
     }
 
 
@@ -378,3 +389,21 @@ background-color: lightgray;
     border: orange 1px solid;
     margin-left: auto;
 }
+
+.footer-right ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.footer-right ul li {
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 760px) { 
+    /* Styles for mobile devices */ 
+    .footer-right {
+        display:none;
+        } 
+    }
